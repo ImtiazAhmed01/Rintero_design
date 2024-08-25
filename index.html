@@ -10,12 +10,21 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font awesome CDN -->
     <script src="https://kit.fontawesome.com/b7e3d7a966.js" crossorigin="anonymous"></script>
+    <!-- Google font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .font_manrope {
+            font-family: "Manrope", sans-serif
+        }
+    </style>
 </head>
 
 
-<body>
+<body class="font_manrope">
     <!-- Header section -->
-    <header class="mx-auto px-5 lg:px-16">
+    <header class="px-5 lg:px-16">
         <!-- Navbar Section -->
         <nav>
             <div class="navbar bg-base-100">
@@ -90,7 +99,7 @@
                     featuring aged
                     wood, stylish metal details, <br> and expansive windows that bathe the interior in natural light.
                 </p>
-                <a class="btn rounded-3xl px-28  md:px-5 bg-[#ABEF5F]/50">View Details <i
+                <a class="btn rounded-3xl w-full md:w-1/6  md:px-5 bg-[#ABEF5F]/50">View Details <i
                         class="fa-solid fa-arrow-right -rotate-45 rounded-full w-7 h-7 justify-center items-center pt-1.5 ml-1 text-black bg-[#ABEF5F]"></i></a>
             </div>
         </section>
@@ -100,20 +109,21 @@
     <main>
         <!-- About us section -->
         <section class="bg-gray-100">
-            <div class="mx-auto px-5 lg:px-16">
+            <div class="px-5 lg:px-16">
                 <img class=" pt-4" src="assets/Vector.png" alt="">
                 <div class="grid grid-cols-1 lg:grid-cols-2 ml-10">
                     <div class="mt-5 mb-5">
                         <div class="text-center lg:text-start">
                             <a class="btn rounded-3xl bg-white"><i class="fa-solid fa-arrow-right"></i> About
                                 Us</a>
-                            <h1 class="text-5xl font-bold mt-2">We design thoughtful, <br>liveable spaces</h1>
+                            <h1 class="text-3xl md:text-5xl font-bold mt-2 ">We design thoughty, <br>liveable spaces
+                            </h1>
                             <p class="text-[#494949] mt-8 mb-4">The barn house enchants with its mix of rustic elegance
                                 and
                                 contemporary <br>style, showcasing aged wood and polished metal details.</p>
                         </div>
                         <!-- inner card -->
-                        <div class="flex gap-8 mb-4 bg-white drop-shadow-2xl rounded-lg p-8 md:w-4/5">
+                        <div class="flex gap-2 mb-4 bg-white drop-shadow-2xl rounded-lg lg:p-8 md:w-4/5">
                             <div>
                                 <img class="mt-4" src="assets/commercial.png" alt="">
                             </div>
@@ -123,12 +133,12 @@
                                     and modern.</p>
                             </div>
                         </div>
-                        <div class="flex gap-8 bg-white drop-shadow-2xl rounded-lg p-8 md:w-4/5">
+                        <div class="flex gap-8 bg-white drop-shadow-2xl rounded-lg lg:p-8 w-full md:w-4/5">
                             <div>
                                 <img class="mt-4" src="assets/residential.png" alt="">
                             </div>
                             <div>
-                                <h3 class="font-semibold text-2xl mb-3">Residential</h3>
+                                <h3 class="font-semibold  text-2xl mb-3">Residential</h3>
                                 <p class="text-[#737373]">The barn house captivates with its <br> blend of rustic charm
                                     and modern.</p>
                             </div>
@@ -155,28 +165,28 @@
                 </p>
             </div>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-                <div class="card bg-base-100 w-80 p-4 bg-[#E7C1D3]">
+                <div class="card bg-base-100 w-auto p-4 bg-[#E7C1D3]">
                     <img class="w-20" src="assets/concept.png" alt="" />
                     <div class="card-body">
                         <h2 class="card-title font-bold">Concept</h2>
                         <p>The barn house charms with <br>its fusion of rustic character <br>and modern appeal.</p>
                     </div>
                 </div>
-                <div class="card bg-base-100 w-80 p-4 bg-[#EFDA6E]">
+                <div class="card bg-base-100 w-auto p-4 bg-[#EFDA6E]">
                     <img class="w-20" src="assets/flow-chart.png" alt="" />
                     <div class="card-body">
                         <h2 class="card-title font-bold">Design Process</h2>
                         <p>The barn house charms with <br>its fusion of rustic character <br>and modern appeal.</p>
                     </div>
                 </div>
-                <div class="card bg-base-100 w-80 p-4 bg-[#A4DAC3]">
+                <div class="card bg-base-100 w-auto p-4 bg-[#A4DAC3]">
                     <img class="w-20" src="assets/vision.png" alt="" />
                     <div class="card-body">
                         <h2 class="card-title font-bold">Supervision</h2>
                         <p>The barn house charms with <br>its fusion of rustic character <br>and modern appeal.</p>
                     </div>
                 </div>
-                <div class="card bg-base-100 w-80 p-4 bg-[#77AAEA]">
+                <div class="card bg-base-100 w-auto p-4 bg-[#77AAEA]">
                     <img class="w-20" src="assets/budget-planning.png" alt="" />
                     <div class="card-body">
                         <h2 class="card-title font-bold">Budget Planning</h2>
@@ -277,7 +287,7 @@
         </section>
     </main>
     <!-- Footer section -->
-    <footer class="text-center bg-black pt-20 pb-40 mb-[300px]">
+    <footer class="text-center bg-black pt-20 pb-40">
         <a class="text-xl font-extrabold text-white"><i
                 class="fa-solid fa-arrow-right -rotate-45 rounded-full w-7 h-7 justify-center items-center pt-1 pl-1 bg-[#ABEF5F] text-black"></i>
             Rinterio Design
